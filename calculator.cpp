@@ -23,13 +23,13 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
                 input2 = CreateWindow("EDIT", "", WS_VISIBLE | WS_CHILD | WS_BORDER,
                                         75, 80, 100, 25, hwnd, (HMENU)ID_INPUT2, NULL, NULL);
                 multi_button = CreateWindow("BUTTON", "*", WS_VISIBLE | WS_CHILD | WS_BORDER,
-                                            45, 120, 30, 30, hwnd, (HMENU)ID_MULTIPLY, NULL, NULL);
+                                            125, 120, 30, 30, hwnd, (HMENU)ID_MULTIPLY, NULL, NULL);
                 divide_button = CreateWindow("BUTTON", "/", WS_VISIBLE | WS_CHILD | WS_BORDER,
-                                             85, 120, 30, 30, hwnd, (HMENU)ID_DIVIDE, NULL, NULL);
+                                             165, 120, 30, 30, hwnd, (HMENU)ID_DIVIDE, NULL, NULL);
                 plus_button = CreateWindow("BUTTON", "+", WS_VISIBLE | WS_CHILD | WS_BORDER,
-                                           125, 120, 30, 30, hwnd, (HMENU)ID_ADD, NULL, NULL);
+                                           45, 120, 30, 30, hwnd, (HMENU)ID_ADD, NULL, NULL);
                 minus_button = CreateWindow("BUTTON", "-", WS_VISIBLE | WS_CHILD | WS_BORDER,
-                                            165, 120, 30, 30, hwnd, (HMENU)ID_SUBTRACT, NULL, NULL);
+                                            85, 120, 30, 30, hwnd, (HMENU)ID_SUBTRACT, NULL, NULL);
         
             break;
             case WM_COMMAND:
